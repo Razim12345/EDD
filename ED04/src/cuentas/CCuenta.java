@@ -3,7 +3,24 @@
 package cuentas;
 public class CCuenta {
 
-	
+
+	private String nombre;
+    private String cuenta;
+    private double saldo;
+    private double tipoInterés;
+    
+    public CCuenta()
+    {
+    }
+    
+
+    public CCuenta(String nom, String cue, double sal, double tipo)
+    {
+        nombre =nom;
+        cuenta=cue;
+        saldo=sal;
+    }
+
     public String getNombre() {
 		return nombre;
 	}
@@ -35,24 +52,8 @@ public class CCuenta {
 	public void setTipoInterés(double tipoInterés) {
 		this.tipoInterés = tipoInterés;
 	}
-
-	private String nombre;
-    private String cuenta;
-    private double saldo;
-    private double tipoInterés;
     
-
-    public CCuenta()
-    {
-    }
-
-    public CCuenta(String nom, String cue, double sal, double tipo)
-    {
-        nombre =nom;
-        cuenta=cue;
-        saldo=sal;
-    }
-
+    
     public double estado()
     {
         return saldo;
