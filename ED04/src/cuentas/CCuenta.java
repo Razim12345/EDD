@@ -1,7 +1,7 @@
 package cuentas;
 public class CCuenta {
 
-
+	
     public String getNombre() {
 		return nombre;
 	}
