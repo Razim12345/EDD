@@ -2,13 +2,19 @@
  * Programa que crea una cuenta y retira e ingresa dinero en ella
  * @author Desconocido
  */
-
-
 package cuentas;
-public class Main {
 
+/**
+ * Clase principal
+ */
+public class Main {
+	/**
+	 * Método principal
+	 * @param args String que se puede introducir desde la consola de comandos
+	 */
     public static void main(String[] args) {
-        operativaCuenta(0);
+
+    	operativaCuenta(0);
     }
 
     /**
@@ -18,7 +24,9 @@ public class Main {
 	private static void operativaCuenta(float cantidad) {
 		CCuenta cuenta1;
         double saldoActual;
-
+        /**
+         * Constructor
+         */
         cuenta1 = new CCuenta("Antonio López","1000-2365-85-1230456789",2500,0);
         saldoActual = cuenta1.estado();
         System.out.println("El saldo actual es"+ saldoActual );

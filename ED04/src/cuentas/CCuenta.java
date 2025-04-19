@@ -2,7 +2,9 @@
 
 
 package cuentas;
-
+/**
+ * Cuenta bancaria
+ */
 public class CCuenta {
 
 	private String nombre;
@@ -31,37 +33,58 @@ public class CCuenta {
         saldo=sal;
     }
     /**
-     * GETTERS & SETTERS
-     * 
+     * getNombre
+     * @return nombre nombre del propietario de la cuenta
      */
     public String getNombre() {
 		return nombre;
 	}
-
+    /**
+     * setNombre da un valor al atributo nombre del propietario de la cuenta
+     * @param nombre nombre del propietario de la cuenta
+     */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-
+	/**
+	 * getCuenta
+	 * @return importe actual de la cuenta
+	 */
 	public String getCuenta() {
 		return cuenta;
 	}
-
+	/**
+	 * setCuenta establece el número de cuenta
+	 * @param cuenta importe de la cuenta
+	 */
 	public void setCuenta(String cuenta) {
 		this.cuenta = cuenta;
 	}
-
+	/**
+	 * getSaldo 
+	 * @return el saldo actual de la cuenta
+	 */
 	public double getSaldo() {
 		return saldo;
 	}
-
+	/**
+	 * Establece el saldo de la cuenta
+	 * @param saldo de la cuenta
+	 */
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
-
+	/**
+	 * getTipoInterés
+	 * @return tipo de interés de la cuenta
+	 */
 	public double getTipoInterés() {
 		return tipoInterés;
 	}
-
+	/**
+	 * Establece el tipo de interés de la cuenta
+	 * @param tipoInterés el tipo de interés de la cuenta
+	 */
 	public void setTipoInterés(double tipoInterés) {
 		this.tipoInterés = tipoInterés;
 	}
